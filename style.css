@@ -166,14 +166,27 @@ header {
     color: white;
     box-shadow: 0px 5px 10px 9px rgba(217, 48, 186, 0.2);
 }
+.tiktok:hover {
+    border: none;
+    width: 255px;
+    font-size: 17px;
+    margin-top: -7px;
+    background: #360033; 
+    background: -webkit-linear-gradient(to right, #0b8793, #360033); 
+    background: linear-gradient(to right, #0b8793, #360033); 
+    color: white;
+    box-shadow: 0px 5px 10px 9px rgba(217, 48, 186, 0.2);
+}
 .buttons button:active, .call button:active {
     width: 240px;
     height: 60px;
 }
 .call {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+}
+.call .tiktoka {
+    margin-left: 10px;
 }
 .called:hover {
     border: none;
@@ -261,11 +274,14 @@ footer {
     }
     .maincon {
         width: 360px;
-        height: 360px;
+        height: 460px;
     }
-    .main .buttons {
+    .main .buttons, .call {
         display: flex;
         flex-direction: column;
+    }
+    .main .call {
+        margin-left: 30px;  
     }
     .whatsapp {
         margin-top: -10px;
@@ -275,6 +291,7 @@ footer {
     }
     .called {
         margin-left: 10px;
+        
     }
     .maincon2 {
         width: 360px;
